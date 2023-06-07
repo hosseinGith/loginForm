@@ -21,7 +21,7 @@ body{
     padding-bottom: 10px;
     background: linear-gradient(0deg,#96cf75,#98d6ff);
     border-radius: 10px;
-    filter: drop-shadow( 0 0 12px #33ff00);
+    filter: drop-shadow( 0 0 8px #000000);
 }
 
 .textarea{
