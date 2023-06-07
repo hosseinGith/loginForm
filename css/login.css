@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+    transition: all .5s;
+}
+::selection {
+    background-color: transparent;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(1800deg,#db726b,#3eaef8);
+    justify-content: center;
+    align-items: center;
+}
+
+.login_signUp{
+    width: 300px;
+    padding-bottom: 10px;
+    background: linear-gradient(0deg,#96cf75,#98d6ff);
+    border-radius: 10px;
+    filter: drop-shadow( 0 0 12px #33ff00);
+}
+
+.textarea{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textarea div input{
+    border: 0;
+    display: flex;
+    background-color:#ffffff ;
+    border-radius:5px ;
+    font-size: 14px;
+    padding: 6px;
+}
+ .email{
+    display: none;
+ }
+
+.button_login{
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+}
+.button_login button{
+    border: 0;
+    background: rgba(15, 96, 245,1);
+    color: #fff;
+    padding: 9px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.text_signUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    
+}
+
+.text_signUp .signUp{
+    box-shadow: 0px 0px 10px black;
+    background: #dce4ffb7;
+    color: #3b5f02;
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+#hide{
+    color: greenyellow;
+    background: #000000;
+    padding: 10px;
+    border: 0;
+    border-radius:16px;
+    cursor: pointer;
+}
+#container {
+    background: #1bdaca;
+    width: 500px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+    display: flex;
+    border-radius: 16px;
+    z-index: 1;
+    position: fixed;
+    opacity: 0;
+    transform: translateY(-700px);
+}
+
+.title {
+    width: 80%;
+    font-size: large;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+}
+.showB{
+    display:block;
+}
+@media screen and (max-width:480px) {
+   #container{
+     width: 100%;
+   }
+  
+}
