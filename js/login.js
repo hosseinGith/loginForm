@@ -18,14 +18,14 @@ signUptext.addEventListener('click',()=>{
     if(!trFls){
         signUptext.innerHTML = 'Login'
         signUpBtn.innerHTML = 'Sign Up'
-        textLogin.innerHTML = 'you have the account:'
+        textLogin.innerHTML = 'For Login:'
         labelpass.classList.add('showB')
         Login = true
         trFls = true
     }else{
         signUptext.innerHTML = 'Sign Up'
         signUpBtn.innerHTML = 'Login'
-        textLogin.innerHTML = 'you not have the account:'
+        textLogin.innerHTML = 'don`t have the account:'
         labelpass.classList.remove('showB')
         Login = false
         trFls = false
