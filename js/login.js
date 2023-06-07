@@ -35,11 +35,9 @@ signUptext.addEventListener('click',()=>{
 signUpBtn.addEventListener('click',()=>{
     
     if(!Login){
-        if(num.value == hossein.name && pass.value == hossein.passd ){
             header.style.opacity = '.2'
             container.style.opacity = '1'
             container.style.transform = 'translateY(0px)'
-        }
     }else{
         
     }
