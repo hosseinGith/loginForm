@@ -8,6 +8,7 @@
 ::selection {
     background-color: transparent;
 }
+
 body{
     display: flex;
     height: 100vh;
@@ -15,63 +16,125 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .login_signUp{
-    width: 300px;
+    width: 400px;
+    height: 600px;
     padding-bottom: 10px;
     background: linear-gradient(0deg,#96cf75,#98d6ff);
     border-radius: 10px;
     filter: drop-shadow( 0 0 8px #000000);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .textarea{
     display: flex;
     justify-content: center;
     margin: 10px 0;
+    width: 100%;
 }
-
-.textarea div input{
+input:active{
+    opacity: .4;
+}
+input{
     border: 0;
     display: flex;
-    background-color:#ffffff ;
+    background-color: #08a4ffe7 ;
+    padding: 20px;
+    width: 100%;
+    color: #000;
     border-radius:5px ;
     font-size: 14px;
-    padding: 6px;
+    margin: 10px 0;
+    position: relative;
 }
+input:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    padding: 50px;
+    border: 10px solid;
+}
+input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
  .email{
     display: none;
- }
+}
 
 .button_login{
     display: flex;
     justify-content: center;
     margin: 12px 0;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.button_login .svg{
+    width: 10%;
+    margin-top: 10px;
+    /* display: none; */
 }
 .button_login button{
     border: 0;
-    background: rgba(15, 96, 245,1);
-    color: #fff;
-    padding: 9px;
-    border-radius: 16px;
+    background: transparent;
+    padding: 10px;
     cursor: pointer;
-}
-.text_signUp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    
+    border-radius: 10px;
+    color: #fff;
+    background: #025bff;
+    width: 50%;
+    position: relative;
 }
 
-.text_signUp .signUp{
-    box-shadow: 0px 0px 10px black;
-    background: #dce4ffb7;
-    color: #3b5f02;
-    margin: 0 0 0 10px;
-    font-size: 20px;
-    border-radius:5px;
-    cursor: pointer;
+.button_login .login_Icon{
+    width: 50px;
+    height: 50px;
+    border: 2px solid ;
+    border-radius: 50%;
+    border-left:2px solid transparent ;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    display: none;
 }
+.button_login .login_Icon::before{
+    content: '';
+    width: 40px;
+    height: 5px;
+}
+.button_login i img{
+    width: 50px;
+    transform: translateX(-50px);
+    display: none;
+}
+.button_login i:hover >img{
+    transform: translateX(0px);
+    display: flex;
+    animation: trans .5s linear;
+
+}
+@keyframes trans {
+    0%{
+    transform: translateX(-20px);
+
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+}
+
 
 #hide{
     color: greenyellow;
@@ -114,9 +177,13 @@ body{
 .showB{
     display:block;
 }
+
 @media screen and (max-width:480px) {
    #container{
      width: 100%;
+   }
+   .header{
+    width: 80%;
    }
   
 }
