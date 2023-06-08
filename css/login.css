@@ -16,15 +16,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-}
-
 .login_signUp{
-
     padding-bottom: 10px;
     background: linear-gradient(0deg,#96cf75,#98d6ff);
     border-radius: 10px;
@@ -33,6 +25,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 400px;
+    height: 500px;
 }
 
 .textarea{
@@ -80,7 +74,7 @@ input::placeholder{
     flex-direction: column;
 }
 .button_login .svg{
-    width: 10%;
+     width: 50px;
     margin-top: 10px;
     /* display: none; */
 }
@@ -169,17 +163,9 @@ input::placeholder{
     justify-content: center;
 }
 
-.hide{
-    display: none;
-}
-.show{
-    display: flex;
-}
-.showB{
-    display:block;
-}
+
 .loading{
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     width: 100%;
     background: white;
@@ -212,15 +198,22 @@ input::placeholder{
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (min-width:300px) and (max-width:480px) {
    #container{
      width: 100%;
    }
-   .header{
-    width:100%;
+   .login_signUp{
+    width: 80%;
+    height: 70%;
+   }
 }
-.login_signUp{
-    height: 50%;
+
+.hide{
+    display: none;
 }
-  
+.show{
+    display: flex;
+}
+.showB{
+    display:block;
 }
