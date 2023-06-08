@@ -17,11 +17,11 @@ body{
     align-items: center;
 }
 .header{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .login_signUp{
     width: 400px;
     height: 600px;
@@ -38,8 +38,8 @@ body{
 .textarea{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 10px 0;
-    width: 100%;
 }
 input:active{
     opacity: .4;
@@ -145,7 +145,7 @@ input::placeholder{
     cursor: pointer;
 }
 #container {
-    background: #1bdaca;
+    background: linear-gradient(#92d1fc,#3e79f8);
     width: 500px;
     height: 200px;
     align-items: center;
@@ -186,7 +186,7 @@ input::placeholder{
     width: 80%;
 }
 .login_signUp{
-    height: 500px;
+    height: 469px;
 }
   
 }
