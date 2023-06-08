@@ -199,7 +199,10 @@ input::placeholder{
 }
 
 @media screen and (min-width:300px) and (max-width:480px) {
-   #container{
+   body{
+    height: 99.7vh;
+    }
+    #container{
      width: 100%;
    }
    .login_signUp{
