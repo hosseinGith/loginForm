@@ -8,6 +8,8 @@ const textLogin    = document.querySelector('.changer')
 const num          = document.querySelector('.num')
 const email        = document.querySelector('.email')
 const pass         = document.querySelector('.pass')
+const loading = document.querySelector('.loading')
+const body = document.querySelector('body')
 
 let trFls = false
 let Login = false
@@ -17,14 +19,14 @@ const hossein = {name:'hossein',passd:'123456789'}
 //-------------------------------function---------------------------------
 
 function showAlert(){
-    header.style.opacity = '.2'
+    header.style.display = 'none'
     container.style.opacity = '1'
     container.style.transform = 'translateY(0px)'
 }
 
 
 function hideAlert(){
-    header.style.opacity = '1'
+    header.style.display = 'flex'
     container.style.opacity = '0'
     container.style.transform = 'translateY(-800px)'
 }
@@ -55,6 +57,7 @@ signUpBtn.addEventListener('click',()=>{
     
     if(!Login){
             showAlert()
+            document.body.style.zIndex = '1'
     }else{
         
     }
@@ -62,10 +65,18 @@ signUpBtn.addEventListener('click',()=>{
    
 })
 window.addEventListener('click',(e)=>{
-    if(e.target ==document.body ){
+    if(e.target ==document.body){
     hideAlert()}
 
 })
 BtnContainer.addEventListener('click',()=>{
     hideAlert()
+})
+let load = false
+function lod(){
+    load = true
+}
+window.addEventListener('load',()=>{
+    if(!load)return
+    loading.style.display = 'none'
 })
