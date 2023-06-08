@@ -124,6 +124,7 @@ input::placeholder{
     animation: trans .5s linear;
 
 }
+
 @keyframes trans {
     0%{
     transform: translateX(-20px);
@@ -177,6 +178,39 @@ input::placeholder{
 .showB{
     display:block;
 }
+.loading{
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+}
+.rotater{
+    padding: 50px;
+    border: 20px solid #b4b4b4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rotate{
+    padding: 50px;
+    border-top: 20px solid #02eeff;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-radius: 50%;
+    position: fixed;
+    animation: rtt 1.8s  infinite;
+}
+@keyframes rtt{
+    to{
+        rotate:360deg;
+    }
+}
 
 @media screen and (max-width:480px) {
    #container{
@@ -186,7 +220,7 @@ input::placeholder{
     width: 80%;
 }
 .login_signUp{
-    height: 469px;
+    height: 50%;
 }
   
 }
