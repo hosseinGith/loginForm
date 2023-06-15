@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: tahoma;
-    transition: all .5s;
 }
 ::selection {
     background-color: transparent;
